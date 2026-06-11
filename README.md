@@ -1,6 +1,6 @@
 # Hi,
 
-iOS engineer building **open-source tools that help agentic / AI-assisted development ship quality deliverables**, guardrails that keep codebases sound when humans *and* AI agents write the code.
+iOS engineer / builder. I make **open-source tools that help agentic / AI-assisted development ship quality deliverables**, guardrails that keep codebases sound when humans *and* AI agents write the code.
 
 ## 🚧 Current projects
 
