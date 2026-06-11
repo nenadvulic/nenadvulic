@@ -1,11 +1,11 @@
-# Hi, I'm Nenad 👋
+# Hi,
 
-iOS engineer building **open-source tools that help agentic / AI-assisted development ship quality deliverables** — guardrails that keep codebases sound when humans *and* AI agents write the code.
+iOS engineer building **open-source tools that help agentic / AI-assisted development ship quality deliverables**, guardrails that keep codebases sound when humans *and* AI agents write the code.
 
 ## 🚧 Current projects
 
 ### 🪨 [solid-like-a-rock](https://github.com/nenadvulic/solid-like-a-rock)
-Architecture linter for Swift — enforces Clean Architecture import rules using [SwiftSyntax](https://github.com/swiftlang/swift-syntax) (real syntax trees, no fragile regex). A CI-ready guardrail for AI-assisted development: dependencies must point inward, and the build fails when a layer imports something it shouldn't.
+Architecture linter for Swift, enforces Clean Architecture import rules using [SwiftSyntax](https://github.com/swiftlang/swift-syntax) (real syntax trees, no fragile regex). A CI-ready guardrail for AI-assisted development: dependencies must point inward, and the build fails when a layer imports something it shouldn't.
 
 - 🔍 `init` command generates a starter config from your project's **real inter-module import graph** — deterministic, no LLM
 - 🐙 [GitHub Action](https://github.com/nenadvulic/solid-like-a-rock-action) for one-line CI integration
