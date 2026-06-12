@@ -5,9 +5,10 @@ iOS engineer / builder. I make **open-source tools that help agentic / AI-assist
 ## 🚧 Current projects
 
 ### 🪨 [solid-like-a-rock](https://github.com/nenadvulic/solid-like-a-rock)
-Architecture linter for Swift, enforces Clean Architecture import rules using [SwiftSyntax](https://github.com/swiftlang/swift-syntax) (real syntax trees, no fragile regex). A CI-ready guardrail for AI-assisted development: dependencies must point inward, and the build fails when a layer imports something it shouldn't.
+Architecture **and security** linter for Swift, built on [SwiftSyntax](https://github.com/swiftlang/swift-syntax) (real syntax trees, no fragile regex). A CI-ready guardrail for AI-assisted development: dependencies must point inward, insecure patterns must not ship — and the build fails when either rule breaks.
 
 - 🔍 `init` command generates a starter config from your project's **real inter-module import graph** — deterministic, no LLM
+- 🔐 **14 security rules** (Keychain misuse, hardcoded secrets, weak crypto, trust-all TLS, PII in logs, …) — calibrated on real codebases, [documented rule by rule](https://github.com/nenadvulic/solid-like-a-rock/blob/main/docs/security-rules.md), and usable **standalone** with `init --security`: no architecture config required
 - 🐙 [GitHub Action](https://github.com/nenadvulic/solid-like-a-rock-action) for one-line CI integration
 - 🍺 [Homebrew tap](https://github.com/nenadvulic/homebrew-solid-like-a-rock) for easy install
 
