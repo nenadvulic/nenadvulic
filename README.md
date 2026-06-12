@@ -14,6 +14,13 @@ Architecture **and security** linter for Swift, built on [SwiftSyntax](https://g
 
 **Contributions are very welcome** — issues, ideas, PRs: see [CONTRIBUTING.md](https://github.com/nenadvulic/solid-like-a-rock/blob/main/CONTRIBUTING.md).
 
+### 🪵 [deadwood](https://github.com/nenadvulic/deadwood) · _early WIP_
+An agent-native dead-code guardrail for Swift, built **on top of** [Periphery](https://github.com/peripheryapp/periphery). It runs Periphery, then reports only the unused code a change *introduces* — scoped to your git diff — so reviews (and AI agents) see what *this* PR made dead, not a wall of pre-existing debt.
+
+- 🎯 Diff-scoped: keeps only findings located in the lines your change touched
+- 🚦 CI gate: exits non-zero only on newly-introduced dead code (`--no-fail` to opt out)
+- 🧱 Early MVP — the diff-scoped engine; an agent hook, PR inline comments and assisted removal are next
+
 ## 🌱 Contributing to Swift open source
 
 I've started contributing across the Swift ecosystem:
