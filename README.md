@@ -28,6 +28,13 @@ Swift package to read the **Serbian electronic ID card (lična karta)** on iOS &
 - 🧩 Pure Swift, zero dependencies; async/await API with an APDU-level log hook
 - 🧪 Unit-tested little-endian TLV parser, plus a sample SwiftUI app
 
+### 🚗 [SerbianVehicleKit](https://github.com/nenadvulic/SerbianVehicleKit)
+Swift package to read the **Serbian vehicle registration card (saobraćajna dozvola)** on iOS & macOS over a CCID reader (**CryptoTokenKit**). Validated on real cards.
+
+- 🧩 Nested **BER-TLV** parser (ISO 7816-4) + 3-variant applet selection
+- 🚘 Extracts ~37 fields (vehicle, technical, owner/user), `Codable` for JSON
+- 🙏 Vehicle protocol ported from [bas-celik](https://github.com/ubavic/bas-celik) (MIT)
+
 ## 🌱 Contributing to Swift open source
 
 I've started contributing across the Swift ecosystem:
