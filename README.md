@@ -21,6 +21,13 @@ An agent-native dead-code guardrail for Swift, built **on top of** [Periphery](h
 - 🚦 CI gate: exits non-zero only on newly-introduced dead code (`--no-fail` to opt out)
 - 🧱 Early MVP — the diff-scoped engine; an agent hook, PR inline comments and assisted removal are next
 
+### 🪪 [SerbianEIDKit](https://github.com/nenadvulic/SerbianEIDKit)
+Swift package to read the **Serbian electronic ID card (lična karta)** on iOS & macOS over a CCID reader, built on Apple's **CryptoTokenKit** (`TKSmartCard`). Protocol reconstructed from the official app and validated on real cards.
+
+- 📇 Reads the document, personal and residence files **+ the cardholder photo** (JPEG)
+- 🧩 Pure Swift, zero dependencies; async/await API with an APDU-level log hook
+- 🧪 Unit-tested little-endian TLV parser, plus a sample SwiftUI app
+
 ## 🌱 Contributing to Swift open source
 
 I've started contributing across the Swift ecosystem:
