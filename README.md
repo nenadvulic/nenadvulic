@@ -21,19 +21,14 @@ An agent-native dead-code guardrail for Swift, built **on top of** [Periphery](h
 - 🚦 CI gate: exits non-zero only on newly-introduced dead code (`--no-fail` to opt out)
 - 🧱 Early MVP — the diff-scoped engine; an agent hook, PR inline comments and assisted removal are next
 
-### 🪪 [SerbianEIDKit](https://github.com/nenadvulic/SerbianEIDKit)
-Swift package to read the **Serbian electronic ID card (lična karta)** on iOS & macOS over a CCID reader, built on Apple's **CryptoTokenKit** (`TKSmartCard`). Protocol reconstructed from the official app and validated on real cards.
+### 🪪 Serbian smart-card readers (iOS & macOS)
+Swift packages to read Serbian chip documents over a CCID reader (**CryptoTokenKit**), reverse-engineered and validated on real cards:
 
-- 📇 Reads the document, personal and residence files **+ the cardholder photo** (JPEG)
-- 🧩 Pure Swift, zero dependencies; async/await API with an APDU-level log hook
-- 🧪 Unit-tested little-endian TLV parser, plus a sample SwiftUI app
+- [SerbianEIDKit](https://github.com/nenadvulic/SerbianEIDKit): identity card (lična karta), data + photo
+- [SerbianVehicleKit](https://github.com/nenadvulic/SerbianVehicleKit): vehicle registration (saobraćajna dozvola), nested BER-TLV
+- [SerbianHealthKit](https://github.com/nenadvulic/SerbianHealthKit): health insurance (zdravstvena knjižica), UTF-16 fields
 
-### 🚗 [SerbianVehicleKit](https://github.com/nenadvulic/SerbianVehicleKit)
-Swift package to read the **Serbian vehicle registration card (saobraćajna dozvola)** on iOS & macOS over a CCID reader (**CryptoTokenKit**). Validated on real cards.
-
-- 🧩 Nested **BER-TLV** parser (ISO 7816-4) + 3-variant applet selection
-- 🚘 Extracts ~37 fields (vehicle, technical, owner/user), `Codable` for JSON
-- 🙏 Vehicle protocol ported from [bas-celik](https://github.com/ubavic/bas-celik) (MIT)
+Pure Swift, zero dependencies, `Codable`, each with a sample SwiftUI app. Vehicle/health protocols ported from [bas-celik](https://github.com/ubavic/bas-celik) (MIT).
 
 ## 🌱 Contributing to Swift open source
 
