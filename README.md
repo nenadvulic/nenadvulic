@@ -1,6 +1,6 @@
 # Hi,
 
-iOS engineer / builder. I make **open-source tools that help agentic / AI-assisted development ship quality deliverables**, guardrails that keep codebases sound when humans *and* AI agents write the code.
+iOS engineer since 2009, based in Belgrade. I specialize in **building custom AI tools on Apple platforms**: MCP servers, agent workflows, and guardrails that keep codebases sound when humans *and* AI agents write the code.
 
 ## 🚧 Current projects
 
