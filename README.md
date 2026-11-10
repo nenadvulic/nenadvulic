@@ -10,8 +10,7 @@ iOS engineer / builder. I make **open-source tools that help agentic / AI-assist
 Log in to **eUprava with your ID card in Safari and Chrome on macOS**, until now only possible
 in Firefox. A signed and notarized macOS app with a CryptoTokenKit extension: it puts the card's
 certificates in the keychain and lets the card itself sign the TLS handshake.
-Guided setup (reader, card, one-click MUP CA4 chain install), Serbian (Cyrillic/Latin) and
-English UI, no telemetry. [Download](https://github.com/nenadvulic/SerbianEIDToken/releases/latest)
+Guided setup (reader, card, one-click MUP CA4 chain install). [Download](https://github.com/nenadvulic/SerbianEIDToken/releases/latest)
 
 #### 🪪 Card readers (iOS & macOS)
 Swift packages to read Serbian chip documents over a CCID reader (**CryptoTokenKit**),
